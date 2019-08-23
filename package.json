@@ -6,7 +6,8 @@
     "start": "node app.js"
   },
   "engines": {
-    "node": "8.10.0"
+    "node": "8.10.0",
+    "yarn": "1.17.3"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
