@@ -3,7 +3,7 @@ var ParseServer = require('parse-server').ParseServer;
 var app = express();
 
 var api = new ParseServer({
-  databaseURI: 'mongodb://localhost:27017/dev' ||
+  databaseURI: //'mongodb://localhost:27017/dev' ||
   "mongodb://admin:admin123@ds041506.mlab.com:41506/vikrant", // Connection string for your MongoDB database
   //cloud: '/home/myApp/cloud/main.js', // Absolute path to your Cloud Code
   appId: 'myAppId',
