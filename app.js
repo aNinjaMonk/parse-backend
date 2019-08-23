@@ -1,6 +1,7 @@
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var app = express();
+var PORT = process.env.PORT || 2368;
 
 var api = new ParseServer({
   databaseURI: //'mongodb://localhost:27017/dev' ||
@@ -15,6 +16,6 @@ var api = new ParseServer({
 // Serve the Parse API on the /parse URL prefix
 app.use('/parse', api);
 
-app.listen(2368, function() {
-  console.log('Server running on port 2368.');
+app.listen(PORT, function() {
+  console.log('Server running on port :' + PORT);
 });
