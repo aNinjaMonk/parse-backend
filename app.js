@@ -5,7 +5,7 @@ var app = express();
 var api = new ParseServer({
   databaseURI: 'mongodb://localhost:27017/dev' ||
   "mongodb://admin:admin123@ds041506.mlab.com:41506/vikrant", // Connection string for your MongoDB database
-  cloud: '/home/myApp/cloud/main.js', // Absolute path to your Cloud Code
+  //cloud: '/home/myApp/cloud/main.js', // Absolute path to your Cloud Code
   appId: 'myAppId',
   masterKey: 'myMasterKey', // Keep this key secret!
   fileKey: 'optionalFileKey',
