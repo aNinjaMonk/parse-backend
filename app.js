@@ -9,12 +9,12 @@ var api = new ParseServer({
   appId: 'myAppId',
   masterKey: 'myMasterKey', // Keep this key secret!
   fileKey: 'optionalFileKey',
-  serverURL: 'http://localhost:1337/parse' // Don't forget to change to https if needed
+  serverURL: 'http://parse-backend.herokuapp.com:1337/parse' // Don't forget to change to https if needed
 });
 
 // Serve the Parse API on the /parse URL prefix
 app.use('/parse', api);
 
-app.listen(1337, function() {
-  console.log('Server running on port 1337.');
+app.listen(2368, function() {
+  console.log('Server running on port 2368.');
 });
