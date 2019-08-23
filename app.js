@@ -2,15 +2,16 @@ var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var app = express();
 var PORT = process.env.PORT || 2368;
+var DB_URL = "mongodb://admin:admin123@ds041506.mlab.com:41506/vikrant";
+// || "mongodb://localhost:27017/dev";
 
 var api = new ParseServer({
-  databaseURI: //'mongodb://localhost:27017/dev' ||
-  "mongodb://admin:admin123@ds041506.mlab.com:41506/vikrant", // Connection string for your MongoDB database
+  databaseURI: DB_URL,
   //cloud: '/home/myApp/cloud/main.js', // Absolute path to your Cloud Code
   appId: 'myAppId',
   masterKey: 'myMasterKey', // Keep this key secret!
   fileKey: 'optionalFileKey',
-  serverURL: 'http://parse-backend.herokuapp.com:1337/parse' // Don't forget to change to https if needed
+  serverURL: 'http://localhost:1337/parse' // Don't forget to change to https if needed
 });
 
 // Serve the Parse API on the /parse URL prefix
