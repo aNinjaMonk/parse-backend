@@ -17,6 +17,6 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "parse-dashboard": "^1.4.3",
-    "parse-server": "^3.7.2"
+    "parse-server": "^4.3.0"
   }
 }
